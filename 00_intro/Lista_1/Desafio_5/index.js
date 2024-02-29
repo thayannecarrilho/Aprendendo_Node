@@ -26,3 +26,7 @@ inquirer
         }
     }
     )
+
+    .catch(error => {
+        console.log("Ocorreu um erro: ", error)
+    })
