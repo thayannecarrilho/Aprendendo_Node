@@ -35,16 +35,13 @@ inquirer
         const final3 = unit * 1.25
 
 
-        console.log(`O valor a ser pago para cada consumidor é R$ ${unit.toFixed(2)}`)            
-        if(answers.gorjeta === 'Bom = 15%'){
-            
-            console.log(`Obrigada pela Gorjeta ${answers.nome}, o valor a ser pago é de R$ ${final1.toFixed(2)}`)
-        }  else if(answers.gorjeta === 'Ótimo = 20%'){
-            
-            console.log(`Obrigada pela Gorjeta ${answers.nome}, o valor a ser pago é de R$ ${final2.toFixed(2)}`)
-        }  else if(answers.gorjeta === 'Excelente = 25%'){
-           
-            console.log(`Obrigada pela Gorjeta ${answers.nome}, o valor a ser pago é de R$ ${final3.toFixed(2)}`)
+        console.log(chalk.bgYellow.black(`O valor a ser pago para cada cliente é R$ ${unit.toFixed(2)}`))            
+        if(answers.gorjeta === 'Bom = 15%'){            
+            console.log(chalk.bgRed.black(`Obrigada pela Gorjeta ${answers.nome}, o valor a ser pago é de R$ ${final1.toFixed(2)}`))
+        }  else if(answers.gorjeta === 'Ótimo = 20%'){            
+            console.log(chalk.bgRed.black(`Obrigada pela Gorjeta ${answers.nome}, o valor a ser pago é de R$ ${final2.toFixed(2)}`))
+        }  else if(answers.gorjeta === 'Excelente = 25%'){           
+            console.log(chalk.bgRed.black(`Obrigada pela Gorjeta ${answers.nome}, o valor a ser pago é de R$ ${final3.toFixed(2)}`))
         }  else{
             console.log("erro")
         }        
