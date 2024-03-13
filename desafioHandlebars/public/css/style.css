@@ -1,0 +1,66 @@
+.navbar-brand img{
+    height: 6.5rem;
+    width: auto;
+}
+
+.navbar{
+    background-color: #ffdc73;
+}
+
+nav .btn{
+    margin-right: 1rem;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.footer{
+    height: 2rem;
+    background-color: #ffdc73;
+    color: #352b2b;
+    text-align: center;
+}
+.container{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.card{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 30px 200px;
+    background-color: #ffdc73;
+    padding: 1rem 0;   
+    width: auto;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card li{
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card svg{
+    height: auto;
+    width: 1rem;
+}
+
+.container-pedido{
+    background-color: #ffdc73;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.atd{
+    margin-bottom: 4rem;
+}
+
+
+
