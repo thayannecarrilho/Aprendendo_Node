@@ -2,23 +2,22 @@
 {{>navbar}}
 
 <div class="container">  
-{{#with order}}
-<h1>Pedido: {{number}}</h1>
+
+<h1>Pedido: {{especificorder.number}}</h1>
 
 <div class="container-pedido">
-<p>Nome: {{name}}</p>
-<p>Telefone: {{celphone}}</p>
-<p>Tamanho do bolo: {{size}}</p>
-<p>Sabor: {{flavor}}</p>
-<p>Cobertura: {{caketop}}</p>
-<p>Data Retirada: {{dateWithdrawn}}</p>
-<p>Horário: {{time}}</p>
+<p>Nome: {{especificorder.name}}</p>
+<p>Telefone: {{especificorder.celphone}}</p>
+<p>Tamanho do bolo: {{especificorder.size}}</p>
+<p>Sabor: {{especificorder.flavor}}</p>
+<p>Cobertura: {{especificorder.caketop}}</p>
+<p>Data Retirada: {{especificorder.dataWithdrawn}}</p>
+<p>Horário: {{especificorder.timedata}}</p>
 </div>
-{{/with}} 
 
 <button class="btn btn-dark atd">Atender pedido</button>
-</div> 
 
+</div> 
     
 {{>footer}}
 
