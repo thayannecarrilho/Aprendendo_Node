@@ -1,5 +1,17 @@
 CREATE DATABASE orders;
 
+create table especificorder (
+	number int not null,
+    name varchar(255) null,
+    celphone char(11),
+    size varchar(10),
+    flavor varchar(20),
+    caketop varchar(20),
+    dataWithdrawn date,
+    timedata time,
+    primary key (number)
+);
+
 USE orders;
 
 INSERT INTO especificorder (number, name, celphone, size, flavor, caketop, dataWithdrawn, timedata)
