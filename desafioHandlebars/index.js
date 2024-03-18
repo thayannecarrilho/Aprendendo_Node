@@ -50,9 +50,7 @@ app.get('/orders', function (req, res) {
     conn.query(query, function (err, data){
       if (err) {
         console.log(err)     
-    }
-      //CLICANDO E ABRINDO PEDIDO     
-     
+    } 
       const especificorder = data
       console.log(data)
       res.render('orders', {especificorder})
